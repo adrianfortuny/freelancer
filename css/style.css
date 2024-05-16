@@ -21,10 +21,21 @@
     font-size: 16px; /* Esto hace que 1 rem sea = a 10px*/
     font-family: "krub", sans-serif;
   }
-  
-  .titulo {
-    text-align: center;
+
+  h1 {
     font-size: 3.8rem;
+  }
+  
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
+  h1, h2, h3 {
+    text-align: center;
   }
   
   .titulo span {
@@ -71,4 +82,28 @@
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 450px;
+    position: relative;
+  }
+
+  .contenido-hero {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .7); /** Transparencia: Antiguo **/
+    background-color: rgb(0 0 0 / 70%); /**lo mismo pero más moderno**/
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenido-hero h2,
+  .contenido-hero p {
+    color: var(--blanco);
+  }
+
+  .ubicacion {
+    display: flex;
+    align-items: flex-end;
   }
